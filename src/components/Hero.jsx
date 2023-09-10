@@ -1,12 +1,14 @@
-import React from "react";
-import arrowRight from "../assets/icons/arrow-right.svg"
+import React, { useState } from "react";
+import arrowRight from "../assets/icons/arrow-right.svg";
 import Button from "./Button/Button";
 import { statistics } from "../constants";
 // import { bigShoe1 } from "../constants";
 import { bigShoe1 } from "../assets/images";
-
+import { shoes } from "../constants";
+import ShoesCard from "./ShoesCard";
 
 const Hero = () => {
+  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
   return (
     <section
@@ -31,26 +33,50 @@ const Hero = () => {
           your active life.
         </p>
 
-        <Button label="Shop Now" imgSrc ={arrowRight} />
+        <Button label="Shop Now" imgSrc={arrowRight} />
 
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
-          {statistics && statistics.map((data)=>{
-            const {label, value} =data
-            return(
-              <article key={label} >
-                <h1 className="text-4xl font-palanquin font-bold">{value}</h1>
-                <p className="text-center font-montserrat text-slate-gray text-lg leading-8">{label}</p>
-              </article>
-            )
-          })}
+          {statistics &&
+            statistics.map((data) => {
+              const { label, value } = data;
+              return (
+                <article key={label}>
+                  <h1 className="text-4xl font-palanquin font-bold">{value}</h1>
+                  <p className="text-center font-montserrat text-slate-gray text-lg leading-8">
+                    {label}
+                  </p>
+                </article>
+              );
+            })}
         </div>
       </div>
 
-      <div className=' bg-primary bg-hero bg-cover bg-center relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40'>
-        <img src={bigShoe1} alt='cover shoes'
+      <div className=" bg-primary bg-hero bg-cover bg-center relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40">
+        <img
+          src={bigShoeImg}
+          alt="cover shoes"
           width={610}
           height={502}
-          className='object-contain relative z-10'/>
+          className="object-contain relative z-10"
+        />
+
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[3%] sm:left-[10%] max-sm:px-6">
+          {shoes &&
+            shoes.map((shoe, index) => {
+              return (
+                <div key={index}>
+                  {/* <ShoesCard thumbnail={thumbnail} bigShoe={bigShoe}/> */}
+                  <ShoesCard
+                    imgUrl={shoe}
+                    changeBigShoe={(shoe) => {
+                      setBigShoeImg(shoe);
+                    }}
+                    bigShoeImg={bigShoeImg}
+                  />
+                </div>
+              );
+            })}
+        </div>
       </div>
     </section>
   );
