@@ -4,7 +4,7 @@ import { shoe8 } from "../assets/images";
 
 const SuperQuality = () => {
   return (
-    <div id="about-us" className="max-container max-sm:mt-0 flex justify-center items-center max-lg:block max-sm:w-full">
+    <div id="about-us" className="lg:py-20 py-10 max-container max-sm:mt-0 flex justify-center items-center max-lg:block max-sm:w-full">
       <section className="flex flex-col flex-1 justify-start gap-5 lg:mt-[-50px] ">
         <h2 className="text-4xl font-semibold py-[-10px] ">
           We Provide You <br className="max-lg:block hidden" />{" "}
