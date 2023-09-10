@@ -32,7 +32,7 @@ const Hero = () => {
           your active life.
         </p>
 
-        <Button label="Shop Now" imgSrc={arrowRight} />
+        <Button label="Shop Now" imgSrc={arrowRight} hover={`hover:bg-sky-700`}/>
 
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics &&

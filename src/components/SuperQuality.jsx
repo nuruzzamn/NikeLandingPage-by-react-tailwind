@@ -25,7 +25,7 @@ const SuperQuality = () => {
         </p>
 
         <section className="mt-8 ">
-          <Button label={"View details"} />
+          <Button label={"View details"} hover={`hover:bg-sky-700`}/>
         </section>
       </section>
 
