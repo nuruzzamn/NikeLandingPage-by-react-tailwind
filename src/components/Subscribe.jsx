@@ -13,7 +13,7 @@ const Subscribe = () => {
         <input type="text" placeholder='subscribe@nike.com' className='input max-[600px]:text-center'
         />
         <section className=' items-center flex max-sm:justify-end max-sm:w-full max-[600px]:justify-center'>
-          <Button label={"Sign up"}/>
+          <Button label={"Sign up"} hover={`hover:bg-black`}/>
         </section>
       </section>
     </div>
