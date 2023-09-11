@@ -22,7 +22,7 @@ const SpecialOffer = () => {
             offer unparalleled value that sets us apart.
           </p>
 
-          <p className="font-montserrat text-xl leading-normal text-gray-500 mt-2 pl-0 pr-0">
+          <p className="font-montserrat text-xl leading-normal text-gray-500 mt-2 pl-0 pr-0 ">
             Navigate a realm of possibilities designed to fulfill your unique
             desires, surpassing the loftiest expectations. Your journey with us
             is nothing short of exceptional.
@@ -32,10 +32,10 @@ const SpecialOffer = () => {
             <Button
               label={"Shop now"}
               imgSrc={arrowRight}
-              hover={`hover:bg-sky-700`}
+              hover={`hover:bg-black`}
             />
 
-            <Button label={"Learn more"} hover={`hover:bg-sky-700`} />
+            <Button label={"Learn more"} hover={`hover:bg-slate-100`} background={`bg-white`} textColor={`text-gray-500`} border={`border-slate-gray`}/>
           </section>
         </section>
       </section>
