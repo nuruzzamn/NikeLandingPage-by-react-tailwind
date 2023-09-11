@@ -26,7 +26,11 @@ const Nav = () => {
         </ul>
 
         <div className="hidden max-lg:block">
-          <img src={hamburger} alt="hamburger" width={25} height={25}/>
+          <img src={hamburger} alt="hamburger" width={25} height={25} />
+        </div>
+
+        <div>
+          <a href="/" className="font-montserrat leading-normal text-lg hover:text-slate-gray">Sign in / Explore now </a>
         </div>
       </nav>
     </header>

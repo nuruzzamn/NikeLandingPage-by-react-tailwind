@@ -1,3 +1,4 @@
+import { copyrightSign } from "../assets/icons";
 import { footerLogo } from "../assets/images";
 import { footerLinks, socialMedia } from "../constants";
 
@@ -54,6 +55,17 @@ const Footer = () => {
               </div>
             );
           })}
+        </section>
+      </section>
+
+      <section className='flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center'>
+        <section className='flex flex-1 justify-start items-center gap-2 font-montserrat'>
+          <img src={copyrightSign} alt=""  width={20} height={20} className=' m-0' />
+          <p>Copyright. All rights reserved.</p>
+        </section>
+
+        <section className="hover:text-slate-gray max-sm:mt-2">
+          <a href="#">Terms & Conditions</a>
         </section>
       </section>
     </footer>

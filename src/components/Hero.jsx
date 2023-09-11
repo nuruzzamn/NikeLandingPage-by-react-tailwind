@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import arrowRight from "../assets/icons/arrow-right.svg";
 import Button from "./Button/Button";
 import { statistics } from "../constants";
-// import { bigShoe1 } from "../constants";
 import { bigShoe1 } from "../assets/images";
 import { shoes } from "../constants";
 import ShoesCard from "./ShoesCard";
