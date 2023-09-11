@@ -30,7 +30,7 @@ const Nav = () => {
         </div>
 
         <div>
-          <a href="/" className="font-montserrat leading-normal text-lg hover:text-slate-gray">Sign in / Explore now </a>
+          <a href="/" className="font-montserrat leading-normal text-lg hover:text-slate-gray pr-4">Sign in / Explore now </a>
         </div>
       </nav>
     </header>
