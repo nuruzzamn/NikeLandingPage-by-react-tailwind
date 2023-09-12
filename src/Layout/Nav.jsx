@@ -8,11 +8,11 @@ const Nav = () => {
   return (
     <header className="padding-x py-8 absolute z-10 w-full">
       <nav className="flex justify-between items-center max-container">
-        <a href="/">
+        <a href="/" className="mt-[-5px]">
           {" "}
           <img src={headerLogo} alt="Logo" width={130} height={29} />
         </a>
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+        <ul className="flex-1 flex justify-center items-center gap-6 xl:gap-16 max-lg:hidden">
           {navLinks.map((navTitle) => (
             <li key={navTitle.label}>
               <a
@@ -25,12 +25,14 @@ const Nav = () => {
           ))}
         </ul>
 
-        <div className="hidden max-lg:block">
-          <img src={hamburger} alt="hamburger" width={25} height={25} />
-        </div>
+       
 
         <div>
-          <a href="/" className="font-montserrat leading-normal text-lg hover:text-slate-gray pr-14 flex justify-center items-center">Sign in / Explore now </a>
+          <a href="/" className="lg:block max-lg:hidden font-montserrat leading-normal text-lg hover:text-slate-gray pr-14 flex justify-center items-center">Sign in / Explore now </a>
+        </div>
+
+        <div className="hidden max-lg:block pr-3">
+          <img src={hamburger} alt="hamburger" width={25} height={25} />
         </div>
       </nav>
     </header>
