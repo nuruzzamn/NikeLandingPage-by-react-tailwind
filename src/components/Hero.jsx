@@ -19,7 +19,7 @@ const Hero = () => {
           Our Summer collections
         </p>
 
-        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
+        <h1 className="mt-10 font-palanquin lg:text-8xl max-sm:text-[40px] max-sm:leading-[60px] font-bold">
           <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
             The New Arrival
           </span>
@@ -38,8 +38,8 @@ const Hero = () => {
             statistics.map((data) => {
               const { label, value } = data;
               return (
-                <article key={label}>
-                  <h1 className="text-4xl font-palanquin font-bold">{value}</h1>
+                <article key={label} className="text-center">
+                  <h1 className="lg:text-4xl text-2xl font-palanquin font-bold">{value}</h1>
                   <p className="text-center font-montserrat text-slate-gray text-lg leading-8">
                     {label}
                   </p>
